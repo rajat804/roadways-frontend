@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 import assets from '../assets/assets';
+import { path } from 'framer-motion/client';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -41,28 +42,18 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     {
-      name: 'About',
-      subItems: [
-        { name: 'History', path: '/about/history' },
-        { name: 'Mission & Vision', path: '/about/mission-vision' },
-        { name: 'Board of Directors', path: '/about/directors' },
-      ],
+      name: 'About',path : '/about'
     },
     {
-      name: 'Services',
-      subItems: [
-        { name: 'Logistics', path: '/services/logistics' },
-        { name: 'Other Services', path: '/services/other' },
-      ],
+      name: 'Services',path : '/services',
     },
-    { name: 'Investors Desk', path: '/investors' },
     { name: 'Careers', path: '/careers' },
     {
       name: 'Contact',
       subItems: [
-        { name: 'Contact Us', path: '/contact/us' },
-        { name: 'Track Consignment', path: '/contact/track' },
-        { name: 'Pickup Requests', path: '/contact/pickup' },
+        { name: 'Contact Us', path: '/contact' },
+        { name: 'Track Consignment', path: '/track' },
+        { name: 'Pickup Requests', path: '/pickup' },
         { name: 'Booking Console Sign Up', path: '/contact/signup' },
       ],
     },
