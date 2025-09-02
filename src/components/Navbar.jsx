@@ -67,7 +67,7 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
             <img
-              className="h-20 w-40"
+              className=" w-20 sm:h-20 sm:w-40"
               src={logoUrl}
               alt="Roadways & Logistics Logo"
             />
