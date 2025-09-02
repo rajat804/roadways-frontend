@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import assets from '../assets/assets';
 
 const Career = () => {
   const [formData, setFormData] = useState({
@@ -62,8 +63,13 @@ const Career = () => {
   return (
     <div className="bg-white overflow-hidden">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-sky-900 to-cyan-700 flex items-center justify-center">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      <section
+        className="relative h-96 flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${assets.truck})`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-sky-900 to-cyan-700 opacity-60"></div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -72,7 +78,7 @@ const Career = () => {
         >
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Careers at Golden Roadways and Logistics</h1>
           <p className="text-lg md:text-xl font-light max-w-2xl mx-auto italic">
-            “Pleasure in the job puts perfection in the work.”
+            “Pleasure in the job puts perfection in the work.” – Aristotle
           </p>
         </motion.div>
       </section>

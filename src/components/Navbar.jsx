@@ -66,11 +66,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
+           <Link to="/">
             <img
               className=" w-20 sm:h-20 sm:w-40"
               src={logoUrl}
               alt="Roadways & Logistics Logo"
             />
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">

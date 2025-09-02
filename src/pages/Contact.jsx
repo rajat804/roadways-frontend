@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFileExcel } from 'react-icons/fa';
+import assets from '../assets/assets';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -54,8 +55,13 @@ const ContactUs = () => {
   return (
     <div className="bg-white overflow-hidden">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-sky-900 to-cyan-700 flex items-center justify-center">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      <section
+        className="relative h-96 flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${assets.truck})`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-sky-900 to-cyan-700 opacity-60"></div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
