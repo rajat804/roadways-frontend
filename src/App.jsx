@@ -9,6 +9,7 @@ import Career from './pages/Career'
 import ContactUs from './pages/Contact'
 import TrackConsignment from './pages/Track'
 import PickupRequest from './pages/Pickup'
+import Network from './pages/Network'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/track" element={<TrackConsignment />} />
         <Route path="/pickup" element={<PickupRequest />} />
+        <Route path="/network" element={<Network />} />
       </Routes>
       <Footer />
     </div>
