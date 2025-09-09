@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFileExcel } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFilePdf } from 'react-icons/fa';
 import assets from '../assets/assets';
 
 const ContactUs = () => {
@@ -20,6 +20,21 @@ const ContactUs = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     setFormData({ name: '', email: '', phone: '', option: '' });
+  };
+
+  const handleDownloadClick = (e) => {
+    const fileUrl = '/files/branch-list.pdf';
+    try {
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = 'branch-list.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error initiating download:', error);
+      alert('Sorry, the file could not be downloaded. Please check if the file exists or contact support.');
+    }
   };
 
   const sectionVariants = {
@@ -254,15 +269,15 @@ const ContactUs = () => {
                     whileHover="hover"
                     className="text-sky-600 text-2xl mr-3"
                   >
-                    <FaFileExcel />
+                    <FaFilePdf />
                   </motion.div>
                   <p className="text-gray-700">
                     <a
-                      href="/files/BRANCH LIST-2024-2025.xlsx"
+                      href="#"
+                      onClick={handleDownloadClick}
                       className="hover:text-yellow-400 transition duration-200"
-                      download
                     >
-                      Download Branch List (2024-2025)
+                      Download Branch List (PDF)
                     </a>
                   </p>
                 </div>
