@@ -52,10 +52,11 @@ const Footer = () => {
             <ul className="space-y-2 text-center md:text-left">
               {[
                 { name: 'Home', path: '/' },
-                { name: 'About Us', path: '/about/history' },
-                { name: 'Services', path: '/services/logistics' },
+                { name: 'About Us', path: '/about' },
+                { name: 'Network', path: '/network' },
+                { name: 'Services', path: '/services' },
                 { name: 'Careers', path: '/careers' },
-                { name: 'Contact Us', path: '/contact/us' },
+                { name: 'Contact Us', path: '/contact' },
               ].map((link) => (
                 <motion.li
                   key={link.name}
@@ -88,7 +89,7 @@ const Footer = () => {
                 className="flex items-center justify-center md:justify-start"
               >
                 <FaMapMarkerAlt className="mr-2 text-yellow-300" />
-                <span className="text-gray-100">123 Logistics Hub, Mumbai, India</span>
+                <span className="text-gray-100">31-32, 2nd Floor, Khanna Market, Opp. Tis Hazari Court, Delhi-110054.</span>
               </motion.li>
               <motion.li
                 variants={footerLinkVariants}
@@ -98,7 +99,7 @@ const Footer = () => {
               >
                 <FaPhone className="mr-2 text-yellow-300" />
                 <a href="tel:+912345678900" className="text-gray-100 hover:text-yellow-600 transition duration-200">
-                  +91 234 567 8900
+                  +91-9350167349
                 </a>
               </motion.li>
               <motion.li
@@ -109,7 +110,7 @@ const Footer = () => {
               >
                 <FaEnvelope className="mr-2 text-yellow-300" />
                 <a href="mailto:info@goldenroadways.in" className="text-gray-100 hover:text-yellow-600 transition duration-200">
-                  info@goldenroadways.in
+                  info.grlogistics@gmail.com
                 </a>
               </motion.li>
             </ul>

@@ -622,68 +622,7 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      {/* Team Section */}
-      <motion.section
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        className="py-20 bg-white"
-      >
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2
-            variants={childVariants}
-            className="text-4xl font-extrabold text-sky-800 mb-12 text-center tracking-tight"
-          >
-            Our Team
-          </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {[
-              {
-                img: "https://via.placeholder.com/150?text=Arjun",
-                name: "Arjun Patel",
-                role: "Chairman and Managing Director",
-                desc: "Leads the company with a vision for excellence in logistics services.",
-              },
-              {
-                img: "https://via.placeholder.com/150?text=Neha",
-                name: "Neha Sharma",
-                role: "Managing Director",
-                desc: "Oversees operations to ensure seamless service delivery.",
-              },
-            ].map((member, index) => (
-              <motion.div
-                key={index}
-                variants={cardVariants}
-                whileHover="hover"
-                className="text-center bg-sky-50 p-8 rounded-2xl shadow-2xl border border-sky-200 transform transition-all duration-300"
-              >
-                <motion.img
-                  variants={childVariants}
-                  className="h-32 w-32 mx-auto rounded-full mb-4 shadow-md"
-                  src={member.img}
-                  alt={member.name}
-                />
-                <motion.h3
-                  variants={childVariants}
-                  className="text-xl font-semibold text-sky-800 mb-2"
-                >
-                  {member.name}
-                </motion.h3>
-                <motion.p
-                  variants={childVariants}
-                  className="text-sky-600 font-medium mb-2"
-                >
-                  {member.role}
-                </motion.p>
-                <motion.p variants={childVariants} className="text-gray-700">
-                  {member.desc}
-                </motion.p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
+      
     </div>
   );
 };
