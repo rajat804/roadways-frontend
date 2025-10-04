@@ -7,6 +7,7 @@ import {
   FaUserTie,
   FaCheckCircle,
 } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 import assets from "../assets/assets";
 import { Link } from "react-router-dom";
 
@@ -55,9 +56,7 @@ const ImageSlider = () => {
             alt={slide.title}
             className="w-full h-full object-cover"
           />
-          {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-sky-900 to-cyan-700 opacity-50 z-10"></div>
-          {/* Text Content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -76,16 +75,17 @@ const ImageSlider = () => {
               {slide.subtitle}
             </motion.p>
             <Link to="/contact">
-            <motion.a
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-yellow-300 text-sky-900 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold hover:bg-yellow-400 transition duration-300 shadow-lg"
-            >
-              Enquire Now!
-            </motion.a></Link>
+              <motion.a
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.4 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-yellow-300 text-sky-900 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold hover:bg-yellow-400 transition duration-300 shadow-lg"
+              >
+                Enquire Now!
+              </motion.a>
+            </Link>
           </div>
         </motion.div>
       ))}
@@ -111,6 +111,11 @@ const HomePage = () => {
     phone: "",
     option: "",
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    emailjs.init("P-bU-6NmxFQI806jR"); // Replace with your EmailJS public key
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -119,8 +124,29 @@ const HomePage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", phone: "", option: "" });
+
+    emailjs
+      .send(
+        "service_npaff2r", // Replace with your EmailJS service ID
+        "template_99dk5sc", // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          option: formData.option,
+        }
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          setIsSubmitted(true);
+          setFormData({ name: "", email: "", phone: "", option: "" });
+          setTimeout(() => setIsSubmitted(false), 5000); // Hide message after 5 seconds
+        },
+        (error) => {
+          console.error("Email sending failed:", error.text);
+        }
+      );
   };
 
   const sectionVariants = {
@@ -181,12 +207,10 @@ const HomePage = () => {
 
   return (
     <div className="bg-white overflow-hidden">
-      {/* Hero Section with Image Slider */}
       <section className="relative h-[39vh] overflow-hidden sm:h-screen">
         <ImageSlider />
       </section>
 
-      {/* Contact Form Section */}
       <motion.section
         id="enquire"
         variants={sectionVariants}
@@ -213,8 +237,17 @@ const HomePage = () => {
             here to provide you with the most cost-effective and efficient
             service.
           </motion.p>
-          <form
-            onSubmit={handleSubmit}
+          {isSubmitted && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center text-green-600 font-semibold mb-4"
+            >
+              Your request has been sent successfully!
+            </motion.div>
+          )}
+          <div
             className="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-2xl border border-sky-200 transform transition-all duration-300 hover:shadow-xl"
           >
             <motion.div variants={childVariants} className="mb-4">
@@ -292,18 +325,17 @@ const HomePage = () => {
             </motion.div>
             <motion.button
               variants={childVariants}
-              type="submit"
+              onClick={handleSubmit}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="w-full bg-sky-700 text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-sky-800 transition duration-300 ease-in-out shadow-md"
             >
               Submit
             </motion.button>
-          </form>
+          </div>
         </div>
       </motion.section>
 
-      {/* Statistics Section */}
       <motion.section
         variants={sectionVariants}
         initial="hidden"
@@ -386,7 +418,6 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      {/* About Us Section */}
       <motion.section
         variants={sectionVariants}
         initial="hidden"
@@ -459,7 +490,6 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      {/* Why Choose Us Section */}
       <motion.section
         variants={sectionVariants}
         initial="hidden"
@@ -527,7 +557,6 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      {/* Services Section */}
       <motion.section
         variants={sectionVariants}
         initial="hidden"
@@ -590,7 +619,6 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      {/* Testimonial Section */}
       <motion.section
         variants={sectionVariants}
         initial="hidden"
@@ -622,8 +650,6 @@ const HomePage = () => {
           </motion.p>
         </div>
       </motion.section>
-
-      
     </div>
   );
 };

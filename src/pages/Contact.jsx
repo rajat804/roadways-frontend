@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFilePdf } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import assets from '../assets/assets';
 
 const ContactUs = () => {
@@ -10,6 +11,9 @@ const ContactUs = () => {
     phone: '',
     option: '',
   });
+  const [isSent, setIsSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -18,8 +22,33 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', phone: '', option: '' });
+    setIsLoading(true);
+    setError(null);
+
+    // EmailJS configuration
+    const serviceID = 'service_npaff2r'; // Replace with your EmailJS service ID
+    const templateID = 'template_0yeldfh'; // Replace with your EmailJS template ID
+    const publicKey = 'P-bU-6NmxFQI806jR'; // Replace with your EmailJS public key
+
+    emailjs.send(serviceID, templateID, {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      option: formData.option,
+    }, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        setIsSent(true);
+        setFormData({ name: '', email: '', phone: '', option: '' });
+        setTimeout(() => setIsSent(false), 5000); // Hide success message after 5 seconds
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        setError('Failed to send message. Please try again later.');
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   const handleDownloadClick = (e) => {
@@ -170,12 +199,37 @@ const ContactUs = () => {
                   <option value="outdoor-branding">Outdoor Branding</option>
                 </select>
               </motion.div>
+              {isSent && (
+                <motion.div
+                  variants={childVariants}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-green-600 text-center font-semibold"
+                >
+                  Message sent successfully!
+                </motion.div>
+              )}
+              {error && (
+                <motion.div
+                  variants={childVariants}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-red-600 text-center font-semibold"
+                >
+                  {error}
+                </motion.div>
+              )}
               <motion.div variants={childVariants}>
                 <button
                   type="submit"
-                  className="w-full bg-sky-700 text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-sky-800 transition duration-300 shadow-md"
+                  disabled={isLoading}
+                  className={`w-full px-6 py-3 rounded-lg text-lg font-bold transition duration-300 shadow-md ${
+                    isLoading
+                      ? 'bg-gray-400 cursor-not-allowed'
+                      : 'bg-sky-700 text-white hover:bg-sky-800'
+                  }`}
                 >
-                  Submit
+                  {isLoading ? 'Sending...' : 'Submit'}
                 </button>
               </motion.div>
             </form>
