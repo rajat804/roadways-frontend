@@ -8,6 +8,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import assets from "../assets/assets";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -74,8 +75,8 @@ const ImageSlider = () => {
             >
               {slide.subtitle}
             </motion.p>
+            <Link to="/contact">
             <motion.a
-              href="/contact"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
@@ -84,7 +85,7 @@ const ImageSlider = () => {
               className="bg-yellow-300 text-sky-900 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold hover:bg-yellow-400 transition duration-300 shadow-lg"
             >
               Enquire Now!
-            </motion.a>
+            </motion.a></Link>
           </div>
         </motion.div>
       ))}
