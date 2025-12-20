@@ -175,7 +175,7 @@ const TrackConsignment = () => {
                   value={consignmentNumber}
                   onChange={handleInputChange}
                   required
-                  placeholder="e.g. 2545731"
+                  placeholder="Enter your Consignment/LR Number"
                   className="w-full px-5 py-4 text-base border border-sky-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-yellow-300 transition"
                 />
               </div>
