@@ -11,7 +11,7 @@ const Network = () => {
       { location: "Khera Kalan", name: "DN Jha", address: "KH.No.47/22, Radhe Radhe Gali Kava Transport Khera Kalan", contacts: "8368940586 / 9650195301" },
       { location: "Bawana", name: "Deepak Sharma", address: "154/3, Firni Road, Opp. Indian Oil Petrol Pump, Bawana Industrial Area", contacts: "9212730655 / 9911443996" },
       { location: "Daya Basti", name: "Sandeep", address: "19/310 Old Rohtak Road, Daya Basti, Near Furkania Masjid Delhi", contacts: "9999674377 / 8447834204" },
-      { location: "Gandhi Nagar", name: "Ashok", address: "Shop No.9/97, Shyam Block, Kailash Nagar Gandhi Nagar Delhi", contacts: "9717215225 / 8860257149" },
+      { location: "Gandhi Nagar", name: "Ashok / Himanshu Jha", address: "Shop No.9/97, Shyam Block, Kailash Nagar Gandhi Nagar Delhi", contacts: "9717215225 / 8860257149" },
       { location: "Gandhi Nagar", name: "Ajay Anand", address: "Main Road Gandhi Nagar Near Punjab National Bank", contacts: "7834888503 / 9999884182" },
       { location: "Jamna Bazar", name: "Rahul Malhotra", address: "1860/1856, Jaat Fauji Dharamshala, Jamna Bazar Near Hanuman Mandir", contacts: "9310078977 / 9312650259" },
       { location: "Jhilmil", name: "Rajesh Chandak", address: "A-10/8, Jhilmil Industrial Area, A Block Delhi", contacts: "9310314729 / 7048956133 / 9312057899" },
