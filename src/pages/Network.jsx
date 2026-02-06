@@ -13,10 +13,16 @@ const Network = () => {
         contacts: "01143502198 / 9211726773 / 9891146748",
       },
       {
+        location: "Khanna Market",
+        name: "Mukesh",
+        address: "Shop No. 26 Khanna Market Delhi",
+        contacts: "9218014722",
+      },
+      {
         location: "Sadar Bazar",
         name: "Shankar Sharma",
-        address: "Shop No.93, New Qutab Road Sadar Bazar Teliwara Delhi",
-        contacts: "9313655806 / 8368201954 / 8368940461",
+        address: "Shop No.93-94, New Qutab Road Sadar Bazar Teliwara Delhi",
+        contacts: "9313655806 / 8368201954",
       },
       {
         location: "Khera Kalan",
@@ -29,26 +35,26 @@ const Network = () => {
         name: "Deepak Sharma",
         address:
           "154/3, Firni Road, Opp. Indian Oil Petrol Pump, Bawana Industrial Area",
-        contacts: "9212730655 / 9911443996",
+        contacts: "9555078167 / 9911443996",
       },
       {
         location: "Daya Basti",
         name: "Sandeep",
         address:
           "19/310 Old Rohtak Road, Daya Basti, Near Furkania Masjid Delhi",
-        contacts: "9999674377 / 8447834204",
-      },
-      {
-        location: "Gandhi Nagar",
-        name: "Ashok / Himanshu Jha",
-        address: "Shop No.9/97, Shyam Block, Kailash Nagar Gandhi Nagar Delhi",
-        contacts: "9717215225 / 8860257149",
+        contacts: "9999674377",
       },
       {
         location: "Gandhi Nagar",
         name: "Ajay Anand",
-        address: "Main Road Gandhi Nagar Near Punjab National Bank",
-        contacts: "7834888503 / 9999884182",
+        address: "9/6 Main Pushta Road Gandhi Nagar (Opp.Pillar No.26)",
+        contacts: "7834888503 / 8377913034",
+      },
+      {
+        location: "Gandhi Nagar",
+        name: "Ajay Anand",
+        address: "Main Road Kailash Nagar Near JB Medical.",
+        contacts: "7834888503 / 8057307837",
       },
       {
         location: "Jamna Bazar",
@@ -59,21 +65,15 @@ const Network = () => {
       },
       {
         location: "Jhilmil",
-        name: "Rajesh Chandak",
+        name: "Kartik Chandak",
         address: "A-10/8, Jhilmil Industrial Area, A Block Delhi",
         contacts: "9310314729 / 7048956133 / 9312057899",
       },
       {
         location: "Kamla Market",
-        name: "Vijay Shankar",
+        name: "Raman Rai",
         address: "Shop No.196, Kamla Market Delhi",
         contacts: "01145002620 / 9354210948",
-      },
-      {
-        location: "Kamla Market",
-        name: "Ravinder Pandey",
-        address: "Shop No.34, Punjabi Market Opp.227 Kamla Market Delhi",
-        contacts: "9350983820 / 8929399702",
       },
       {
         location: "Karol Bagh",
@@ -91,10 +91,10 @@ const Network = () => {
       },
       {
         location: "Kashmere Gate",
-        name: "Pawan",
+        name: "Vivek",
         address:
           "Shop No.1/782, Nicalson Road, Near Axis Bank, Kashmere Gate, Delhi",
-        contacts: "01145105994 / 9313667456",
+        contacts: "8800642300",
       },
       {
         location: "Kashmere Gate",
@@ -119,7 +119,7 @@ const Network = () => {
         location: "New Lajpat Rai Market",
         name: "Ravi Anand",
         address: "Shop No. 243, New Lajpat Rai Market Delhi",
-        contacts: "9910231765 / 9015476509",
+        contacts: "9910231765",
       },
       {
         location: "Sanjay Gandhi TPT",
@@ -136,6 +136,13 @@ const Network = () => {
         contacts: "9811353810 / 8076856250 / 9999178551 / 8882018141",
       },
       {
+        location: "Libaspur",
+        name: "Nitish Sharma",
+        address:
+          "Gali No-9, Godown No-8, 66 Ft Road Near Power House,Libaspur.",
+        contacts: "9654304261 / 9310103990/ 9716262379",
+      },
+      {
         location: "Wazirpur",
         name: "S.K. Yadav",
         address: "Shop No.B-28, Industrial Area Wazirpur Delhi",
@@ -146,6 +153,24 @@ const Network = () => {
         name: "Govind",
         address: "Shop No. 69-70, Chara Mandi Zakhira Delhi",
         contacts: "9654499953 / 8595340137 / 9891648444",
+      },
+      {
+        location: "Mori Gate",
+        name: "",
+        address: "3901, Hamilton Road, Mori Gate, Delhi",
+        contacts: "9218012537",
+      },
+      {
+        location: "Gandhi Nagar",
+        name: "",
+        address: "9/6 Main Pusta Road, Gandhi Nagar, Delhi",
+        contacts: "9218014721",
+      },
+      {
+        location: "Sanjay Gandhi TPT Nagar",
+        name: "",
+        address: "AG-88, Sanjay Gandhi Transport Nagar, Delhi",
+        contacts: "9218012536",
       },
     ],
     UttarPradesh: [
@@ -171,11 +196,18 @@ const Network = () => {
         contacts: "8218391549 / 8534930520",
       },
       {
+        location: "Baraut",
+        name: "Rajesh Kumar",
+        address:
+          "Aminagar Sarai Road Near RK Industries Delhi Saharanpur Road Baraut.",
+        contacts: "8920032367",
+      },
+      {
         location: "Ghaziabad",
         name: "B.K Joshi",
         address:
           "K.R.S. Good Transport Co. Devi Mandir Road, Opp. Delhi Gate, Ghaziabad",
-        contacts: "9212450050 / 7065430172",
+        contacts: "9218014723 / 9212450050",
       },
       {
         location: "Hathras",
@@ -200,7 +232,7 @@ const Network = () => {
         location: "Noida",
         name: "Parveen Gupta",
         address: "Sector -5, Harola, Opp. Fire Station Noida",
-        contacts: "9910093971",
+        contacts: "9218012535",
       },
       {
         location: "Saharanpur",
@@ -213,26 +245,6 @@ const Network = () => {
         name: "J.N.Jha",
         address: "Shop No.7, Panchlok, Pradhan Market Tronica City, Ghaziabad",
         contacts: "9718796134 / 9643667885",
-      },
-      {
-        location: "UP. Border-Godown-1 (Bihar)",
-        name: "Vikas Kumar",
-        address:
-          "Metro Pillar No 109 Gali No 2, Opposite Chaena Body Work, UP.Border",
-        contacts: "8368940779 / 7503368732",
-      },
-      {
-        location: "UP. Border-Godown-2 (UP, Jharkhand)",
-        name: "Ajay Tiwari",
-        address:
-          "Near By Geeta Press Bharat Petrol Pump Metro Pillar No.158, Chikamberpur, U.P. Border",
-        contacts: "8368940466 / 7701921876",
-      },
-      {
-        location: "UP. Border-Godown-3 (Kosi + W.B + Assam)",
-        name: "Vikas Kumar",
-        address: "Bajwa Compound, UP.Border",
-        contacts: "8368940559 / 7503368732",
       },
       {
         location: "UP. Border-Godown-1 (UP, Jharkhand)",
@@ -285,13 +297,13 @@ const Network = () => {
       {
         location: "Jaghadari",
         name: "Manoj Gulati",
-        address: "H.O. Gauri Shankar Link Road Behind Gupta Metal, Jagadhari",
+        address: "Plot No-98 , Jesico Colony Jagadari Haryana-135003",
         contacts: "9812000058",
       },
       {
         location: "Panipat",
         name: "Narendra Malik",
-        address: "Plot No.214, Sector-25, Transport Nagar, Panipat",
+        address: "Plot No.201, Sector-25, Transport Nagar, Panipat.",
         contacts: "9813180050 / 8950103535",
       },
     ],
@@ -300,7 +312,7 @@ const Network = () => {
         location: "Amritsar",
         name: "Jagdish",
         address: "Ghee Mandi Chowk, Opp. Bank Balmiki Mandir Amritsar",
-        contacts: "9317706397 / 7009566675 / 90560991517",
+        contacts: "9317706397 / 7009566675",
       },
       {
         location: "Baddi",
@@ -315,59 +327,12 @@ const Network = () => {
         contacts: "8847462925 / 9876863807",
       },
       {
-        location: "Chandigarh",
-        name: "Hargun Singh",
-        address: "45, New Timber Market Sector-26, Chandigarh.",
-        contacts: "9810078313 / 9569746573",
-      },
-      {
-        location: "Solan",
-        name: "Kiran Sharma",
-        address: "Samti Road , Saproon Solan",
-        contacts: "8988284426",
-      },
-      {
-        location: "Parwanoo",
-        name: "Grover",
-        address: "Bal Mukand Complex Sec-2 Parwanoo",
-        contacts: "9467970713",
-      },
-      {
-        location: "Panchkula",
-        name: "Sandeep",
-        address: "Plot No. 340 Industrial Area Phase 1 Panchkula",
-        contacts: "9463961346",
-      },
-      {
-        location: "Barwala",
-        name: "Ram",
-        address: "Plot No. 112 Phase 1 HSIDC Alipur Barwala",
-        contacts: "9996642215",
-      },
-      {
-        location: "Zirakpur",
-        name: "Manjeet",
-        address: "Nagra Bulding Complex, Near J.P Hospital Ambala Chandigarh",
-        contacts: "9205638435",
-      },
-      {
-        location: "Mohali",
-        name: "Sahil",
-        address: "Balongi Mohali ",
-        contacts: "8894865366",
-      },
-      {
-        location: "Kala Amb.",
-        name: "Sunny",
-        address: "Nahan Road, Kala Amb, Sirmaur .",
-        contacts: "8700553470",
-      },
-      {
-        location: "Jalandhar",
+        location: "Jalandar",
         name: "Niranjan",
         address: "Plot no. 5, Industrial Area, Jalandhar",
         contacts: "9671689262",
       },
+
       {
         location: "Ludhiana",
         name: "Harcharn Singh",
@@ -409,14 +374,70 @@ const Network = () => {
     ],
     Gujarat: [
       {
-  location: "Ahmedabad / Asalai",
-  name: "Rohtash Kumar",
-  address: "Block No-1600B/2, Daga Estate, NH-8, Jetalpur, Ahmedabad",
-  contacts: "9218303752",
-}
-
-    
+        location: "Ahmedabad / Asalai",
+        name: "Rohtash Kumar",
+        address: "Block No-1600B/2, Daga Estate, NH-8, Jetalpur, Ahmedabad",
+        contacts: "9218303752",
+      },
+      {
+        location: "Ahmedabad City",
+        name: "Satish Jain",
+        address: "Near Big Bazar, Opp. Sani Mandir, Kankaria Road, Ahmedabad",
+        contacts: "9825647310",
+      },
+      {
+        location: "Bhavnagar",
+        name: "Bhavesh",
+        address: "Near Pooja Transport, Lathi Bazar, Bhavnagar",
+        contacts: "9227050607 / 9106590150",
+      },
+      {
+        location: "Rajkot - I",
+        name: "D.K Sharma",
+        address: "Nayara Petrol Pump, Gondal Road, Rajkot",
+        contacts: "9601558842",
+      },
+      {
+        location: "Rajkot - II",
+        name: "D.K Sharma",
+        address: "Near Murlidhar Weigh Bridge, Bhumi Gate, Shapar",
+        contacts: "9601558842",
+      },
+      {
+        location: "Rajkot - III",
+        name: "D.K Sharma",
+        address: "Gate No-2, Near ICICI Bank GIDC, Metoda",
+        contacts: "7802028842",
+      },
+      {
+        location: "Dhora Ji",
+        name: "Inder Sharma",
+        address:
+          "Shop No-2, Near Radhika Marbal and Tiles, Old Upleta Road, Dhora Ji",
+        contacts: "8758478737",
+      },
+      {
+        location: "Jetpur",
+        name: "Ashok Jain",
+        address: "Rabarika Road, Malviya Industries Estate, Jetpur",
+        contacts: "9377891107 / 9974179864",
+      },
+      {
+        location: "Halol",
+        name: "Narender Chouhan",
+        address:
+          "Near Ambika Transport, Opp. Bhavna Roadways, Rinki Chokdi, Halol GIDC, Halol",
+        contacts: "8469643399",
+      },
+      {
+        location: "Vapi",
+        name: "Kailash",
+        address:
+          "Plot No. C-1-61/555, 100 Shed Area, Near Dupen Laboratories, Opp. Johnson & Johnson, GIDC, Vapi",
+        contacts: "8530183005",
+      },
     ],
+
     UttarPradeshDelivery: [
       {
         location: "Azamgarh",
@@ -435,7 +456,7 @@ const Network = () => {
         location: "Basti",
         name: "Shubam Singh",
         address:
-          "Shubam TPT.Company Opp. Railway Mall Godown Nirmli Kund Basti",
+          "Shubam TPT Company Opp. Railway Mall Godown Nirmli Kund Basti",
         contacts: "9598313110 / 9838032391",
       },
       {
@@ -445,15 +466,15 @@ const Network = () => {
         contacts: "9451019063",
       },
       {
-        location: "Mohammdabad Gohna",
+        location: "Mohammadabad Gohna",
         name: "Durgesh Tiwari",
-        address: "Near Calendar Tiraha Opp. BSNL Office Ps Mohammadabad Gohna",
+        address: "Near Calendar Tiraha Opp. BSNL Office PS Mohammadabad Gohna",
         contacts: "9415261075 / 7985528915",
       },
       {
         location: "Mubarakpur",
         name: "Ajju",
-        address: "Ali Nagar Chowk Mubarakpur,Distt-Azamgarh.",
+        address: "Ali Nagar Chowk Mubarakpur, Distt-Azamgarh",
         contacts: "9838797151 / 9235338174",
       },
       {
@@ -465,7 +486,7 @@ const Network = () => {
       {
         location: "Faizabad",
         name: "Ashish",
-        address: "Faizabad Road Lines.",
+        address: "Faizabad Road Lines",
         contacts: "9415108075 / 8303306859",
       },
       {
@@ -473,12 +494,6 @@ const Network = () => {
         name: "Salish Morhi",
         address: "Morhi Transport Service, CC Road Pashuram Chowk",
         contacts: "9452628520 / 9953639285",
-      },
-      {
-        location: "Salempur",
-        name: "Inderjeet Morhi",
-        address: "Morhi Transport Bapu Inter Collage Salempur",
-        contacts: "9984018502 / 7071445790",
       },
       {
         location: "Barhalganj",
@@ -495,7 +510,7 @@ const Network = () => {
       {
         location: "Ghazipur",
         name: "Manish Pathak",
-        address: "Katholi Jangirpur Road, Ghazipur",
+        address: "Katholi Jangipur Road, Ghazipur",
         contacts: "9653091197",
       },
       {
@@ -505,26 +520,20 @@ const Network = () => {
         contacts: "9336778875 / 9936771986",
       },
       {
-        location: "Akbarpur/AmbedkarNagar",
-        name: "Haji Mohd.Aleem",
-        address: "Faizabad Road (Near Tamsa Marg) Akbarpur,Ambedkar Nagar.",
+        location: "Akbarpur / Ambedkar Nagar",
+        name: "Haji Mohd. Aleem",
+        address: "Faizabad Road (Near Tamsa Marg) Akbarpur, Ambedkar Nagar",
         contacts: "9838387414 / 9305301549",
-      },
-      {
-        location: "Jalalpur",
-        name: "Najim Mohd.",
-        address: "Khan Transport Co",
-        contacts: "9792243417 / 9648680312",
       },
       {
         location: "Tanda",
         name: "Imran Ahmed",
-        address: "Chander Lok Palace Haspur Road Tanda.",
+        address: "Chander Lok Palace Haspur Road Tanda",
         contacts: "9721261909 / 8052863688",
       },
       {
         location: "Gosiganj",
-        name: "Bishno Kumar ",
+        name: "Bishno Kumar",
         address: "Bus Stand Gosiganj",
         contacts: "9984613438 / 9451429064",
       },
@@ -536,27 +545,28 @@ const Network = () => {
       },
       {
         location: "Kanpur",
-        name: "Manoj Singh",
-        address: "133/369 A Dhakna Purwa Transport Nagar",
-        contacts: "9935039899",
+        name: "Sansar Singh",
+        address:
+          "133/117-B Rattu Road Purwa Transport Nagar, Kanpur, Near Indian Oil Petrol Pump",
+        contacts: "9839034102 / 9336121866",
       },
       {
         location: "Lucknow",
         name: "Sanjay Sharma",
         address:
-          "Aishbagh Malvea Nagar Chauraha Gupta Market, Godown.No.4 Lucknow",
-        contacts: "9305182357 / 8090408899",
+          "Aishbagh Malvea Nagar Chauraha Gupta Market, Godown No.4, Lucknow",
+        contacts: "8090408899 / 9305182357",
       },
       {
         location: "Mau",
         name: "PN Singh",
-        address: "UP Transport organization, Dhiti Mau",
+        address: "UP Transport Organization, Dhiti Mau",
         contacts: "9839662682 / 9648110080",
       },
       {
         location: "Machhalishar",
         name: "Virender Kumar",
-        address: "Kolkhara Post Machhalishar.Distt-Jaunpur",
+        address: "Kolkhara Post Machhalishar, Distt-Jaunpur",
         contacts: "8318905833 / 7408353575",
       },
       {
@@ -576,7 +586,7 @@ const Network = () => {
         location: "Sultanpur",
         name: "Ashish Singh",
         address:
-          "Singh Transport, Shop no. - 4, Transport nagar, Lucknow Road, Sultanpur",
+          "Singh Transport, Shop No-4, Transport Nagar, Lucknow Road, Sultanpur",
         contacts: "8957009006 / 7007202258",
       },
       {
@@ -588,7 +598,7 @@ const Network = () => {
       {
         location: "Yusufpur",
         name: "Golu Yadav",
-        address: "Salempur Mod Shiv Mandir, Gazipur- 233227",
+        address: "Salempur Mod Shiv Mandir, Gazipur - 233227",
         contacts: "8318498756 / 8176834552",
       },
     ],
@@ -603,7 +613,7 @@ const Network = () => {
         location: "Araria Court",
         name: "Amarnath Jha",
         address:
-          "Bus Stand Road Opp.LIC Office Near Sanjay Mishra Petrol Pump, Araria",
+          "Bus Stand Road Opp. LIC Office Near Sanjay Mishra Petrol Pump, Araria",
         contacts: "8002008495",
       },
       {
@@ -616,18 +626,18 @@ const Network = () => {
       {
         location: "Bettiah",
         name: "Alok Kumar",
-        address: "Rajdevri Near Najar Bagh Park",
+        address: "Rajdevi Near Najar Bagh Park",
         contacts: "7759091055",
       },
       {
         location: "Bhagalpur",
-        name: "Bhawani Mishra",
+        name: "DK Pandey",
         address: "Behind Muslim High School Tatarpur, Bhagalpur",
-        contacts: "9304687607",
+        contacts: "6200280109 / 9123251019",
       },
       {
-        location: "Brahmapur",
-        name: "Naryan Dutt",
+        location: "Brahmpur",
+        name: "Narayan Dutt",
         address:
           "Chandra Dev Complex, Near Ojha Mobile Nine, Brahmpur Road, Chaurasta",
         contacts: "9523555626",
@@ -639,27 +649,27 @@ const Network = () => {
         contacts: "8789280916 / 8877690526",
       },
       {
-        location: "Bhabhua",
+        location: "Bhabua",
         name: "Avinash Pandey",
-        address: "Near Maruti Suzaki Agency Bhabua Road, Mohaniya-821109",
+        address: "Near Maruti Suzuki Agency Bhabua Road, Mohaniya-821109",
         contacts: "7564940582 / 9905909226",
       },
       {
-        location: "Buxer",
+        location: "Buxar",
         name: "Ravi Singh",
-        address: "Main Road, Near by Power House, Charitra Van, Buxer",
+        address: "Main Road, Near by Power House, Charitra Van, Buxar",
         contacts: "9431083952 / 7903584873",
       },
       {
         location: "Biharsharif",
         name: "Pintu",
-        address: "Pillar no.58 Near Bharat Gas Godown Biharsharif",
+        address: "Pillar No-58 Near Bharat Gas Godown Biharsharif",
         contacts: "8862830801",
       },
       {
         location: "Bihiya",
         name: "Nagendra Ojha",
-        address: "Lotus School Sahib Tola Dock Bangla Road, Raja Bazar Bihiya",
+        address: "Lotus School Sahib Tola Dock Bangla Road, Raja Bazar, Bihiya",
         contacts: "7677618842 / 7070813494",
       },
       {
@@ -669,12 +679,6 @@ const Network = () => {
         contacts: "9304624234 / 7015938250",
       },
       {
-        location: "Bihariganj",
-        name: "Akhilesh Kumar",
-        address: "Vishkarma Chowk Bihariganj",
-        contacts: "9852660870",
-      },
-      {
         location: "Chhapra",
         name: "Abhishek Dubey",
         address: "Garkha Dhala Road, Near DAV School Newaji Tola Road, Chhapra",
@@ -682,7 +686,7 @@ const Network = () => {
       },
       {
         location: "Darbhanga",
-        name: "A.K. Ojha",
+        name: "A.K Ojha",
         address:
           "Shivdhara Chowk, Gehumi Road Near Highway Over Bridge, Darbhanga",
         contacts: "9430063337 / 7324972257",
@@ -691,48 +695,47 @@ const Network = () => {
         location: "Daudnagar",
         name: "Sarfu Din Ansari",
         address:
-          "Bhkhrwan Mod, Near Agarwal Arra Machine, Daudnagar Bihar-824113",
+          "Bikhrawan Mod, Near Agarwal Arra Machine, Daudnagar Bihar-824113",
         contacts: "9934918807 / 9955846775",
       },
       {
-        location: "Dheri On Son",
+        location: "Dehri On Son",
         name: "Naeem Bhai",
-        address: "Shahbad Kanta, Jakki Bigha Dehri On Son",
+        address: "Shahbad Kanta, Jakki Bigha, Dehri On Son",
         contacts: "7004423430 / 7004178486",
       },
       {
-        location: "Dumroan",
+        location: "Dumraon",
         name: "Vinod Singh",
-        address: "Sumitra Collage Road, Near by Tiwari Computer",
+        address: "Sumitra College Road, Near by Tiwari Computer",
         contacts: "7488544044 / 6202670918",
       },
       {
         location: "Forbisganj",
         name: "Mintu Thakur",
-        address: "Godhiyare chok, Forbesganj",
+        address: "Godhiyare Chowk, Forbesganj",
         contacts: "9199490887 / 9262754705",
       },
       {
         location: "Gaya",
         name: "Tannu Bhai",
-        address: "BN Jha Road Dr. Shiv Bachan Singh, Murarpur",
+        address: "BN Jha Road, Dr. Shiv Bachan Singh, Murarpur",
         contacts: "9122333000 / 9153587719 / 9431263328",
       },
       {
         location: "Gopal Ganj",
-        name: "Dharmender",
-        address: "Yadavpur Chowk, Near Saraswati Cinema Hall, Gopal Ganj",
-        contacts: "9431407567",
+        name: "Shailesh Kumar Tiwari ",
+        address: "Hajiyapur Chowk Gopalganj.",
+        contacts: "9631866083",
       },
       {
         location: "Hajipur",
-        name: "Manoj Singh",
-        address:
-          "Anjanpir Chowk Near Madina Masjid Sachipati Hajipur By Pass Road",
-        contacts: "6200632326",
+        name: "Abhishek Kumar",
+        address: "Adalpur Balu Mandi Lalganj Road Hajipur",
+        contacts: "912312697 / 741289402",
       },
       {
-        location: "Jay Nagar",
+        location: "Jai Nagar",
         name: "Abhay Kumar",
         address:
           "Maxi Stand, Nearest Honda Agency, Bus Stand Road, Jai Nagar-847226",
@@ -741,13 +744,13 @@ const Network = () => {
       {
         location: "Jamui",
         name: "Pawan Kumar",
-        address: "Bithalpur Road Near Mahavir, Vatika Vivah Bhawan, Jamui",
+        address: "Bithalpur Road Near Mahavir Vatika Vivah Bhawan, Jamui",
         contacts: "9931671942",
       },
       {
         location: "Jhanjarpur",
         name: "Rushan Kumar",
-        address: "Jhanjarpur Mohna Road near Indian Oil Petrol Pump",
+        address: "Jhanjarpur Mohna Road Near Indian Oil Petrol Pump",
         contacts: "8969757264 / 9097638196",
       },
       {
@@ -759,14 +762,13 @@ const Network = () => {
       {
         location: "Kishanganj",
         name: "Raj Kumar",
-        address:
-          "MRF Tyre showroom Behind Caltex Chowk NH-31, Kishan Ganj, KNE",
+        address: "MRF Tyre Showroom Behind Caltex Chowk NH-31, Kishanganj, KNE",
         contacts: "8972148637 / 7604021111",
       },
       {
         location: "Katihar",
         name: "K.P Singh",
-        address: "D.S Collage Road, Near Radiant Hospital",
+        address: "D.S College Road, Near Radiant Hospital",
         contacts: "7257072818 / 8825112518",
       },
       {
@@ -777,15 +779,15 @@ const Network = () => {
         contacts: "7050645934 / 9461533567",
       },
       {
-        location: "Khagariya",
+        location: "Khagaria",
         name: "Robin Singh",
-        address: "By Pass Road, Khargariya Near Haiyan Thana",
+        address: "Bypass Road, Khagaria Near Haiyan Thana",
         contacts: "9939849201",
       },
       {
         location: "Madhubani",
-        name: "K.K.Ojha",
-        address: "Meena Bazar Madhubani",
+        name: "K.K Ojha",
+        address: "Meena Bazar, Madhubani",
         contacts: "9931803001 / 8210470557",
       },
       {
@@ -804,14 +806,22 @@ const Network = () => {
         location: "Muzaffarpur",
         name: "Nav Ratan Lal Mishra",
         address:
-          "Akhara Ghat Road, Old F.C.I. Near Ratna Banquet Hall, Muzaffarpur",
+          "Akhara Ghat Road, Old F.C.I., Near Ratna Banquet Hall, Muzaffarpur",
         contacts: "9431474737 / 9334952779",
       },
       {
-        location: "Murliganj",
-        name: "Akhilesh Kumar",
-        address: "Indian Oil Petrol Pump Murliganj Pin Code-852122",
-        contacts: "9852660870",
+        location: "Motihari",
+        name: "Narendra Kumar",
+        address:
+          "Nakahed Tola Near Sikariya Teachers Training College Motihari-845401",
+        contacts: "9430234856",
+      },
+      {
+        location: "Raxaul",
+        name: "Vivek Tiwari",
+        address:
+          "Rameshwar Fruit Mandi Behind Bank of Baroda Main Road Koriya Tola",
+        contacts: "9229767035",
       },
       {
         location: "Narkatiya Ganj",
@@ -823,25 +833,25 @@ const Network = () => {
         location: "Patna",
         name: "Jamil Akhter",
         address:
-          "Metro Pillar no. - 172, Gaya Road Bus Stand Near Umro Banquet Hall Patna",
+          "Metro Pillar No-172, Gaya Road Bus Stand Near Umro Banquet Hall, Patna",
         contacts: "7003158671 / 7070980786",
       },
       {
         location: "Gulabbagh",
         name: "Dulal Das",
-        address: "Gulabbagh, Zero Mile (PF Campas)",
+        address: "Gulabbagh, Zero Mile (PF Campus)",
         contacts: "9973321390",
       },
       {
         location: "Purnia",
         name: "Dulal Das",
-        address: "Gulabbagh, Zero Mile (PF Campas)",
+        address: "Gulabbagh, Zero Mile (PF Campus)",
         contacts: "9973321390",
       },
       {
         location: "Samastipur",
         name: "Dipu Sinha",
-        address: "Pithiya Gachhi Samastipur",
+        address: "Pithiya Gachhi, Samastipur",
         contacts: "7631829706 / 6204028102",
       },
       {
@@ -859,8 +869,8 @@ const Network = () => {
       },
       {
         location: "Sitamarhi",
-        name: "Avishek Kumar",
-        address: "Riga Road, Infront Of Sri Dwarika Vivah Bhawan, Sitamarhi",
+        name: "Abhishek Kumar",
+        address: "Riga Road, Infront of Sri Dwarika Vivah Bhawan, Sitamarhi",
         contacts: "9540860425 / 9267992951",
       },
       {
@@ -873,22 +883,23 @@ const Network = () => {
       {
         location: "Saharsa",
         name: "Ishtiaque Ahmed",
-        address: "Station Road, Chandni chowk, Sangham Bihar Hotel",
+        address: "Station Road, Chandni Chowk, Sangham Bihar Hotel",
         contacts: "9430468528 / 9939092236",
       },
       {
         location: "Supaul",
         name: "Ishtiaque Ahmed",
-        address: "Station Road, Chandni chowk, Sangham Bihar Hotel",
+        address: "Station Road, Chandni Chowk, Sangham Bihar Hotel",
         contacts: "9430468528 / 9939092236",
       },
       {
         location: "Vikramganj",
         name: "Abilash Kumar",
-        address: "Sararam Road Water Tanki Near Mahavir Mandir Vikramganj",
+        address: "Sasaram Road Water Tanki Near Mahavir Mandir, Vikramganj",
         contacts: "8271079043 / 7667687436",
       },
     ],
+
     JharkhandDelivery: [
       {
         location: "Barhi",
@@ -897,28 +908,28 @@ const Network = () => {
         contacts: "8285873749",
       },
       {
-        location: "Chas",
+        location: "Chas / Bokaro",
         name: "Rana Singh",
         address:
           "Purulia Road, Near Jagdamba Mandir Tara Nagar, Chas, Jharkhand",
-        contacts: "9334210559 / 7667152562",
+        contacts: "9334210559 / 7903255863",
       },
       {
-        location: "Lohardga",
+        location: "Lohardaga",
         name: "Sunil",
-        address: "Kishno More Santi Nagar, Lohardga",
-        contacts: "8789582299 / 9334770575",
+        address: "Kishno More Santi Nagar, Lohardaga",
+        contacts: "8789582299 / 9608531115",
       },
       {
         location: "Daltenganj",
         name: "Niklesh",
-        address: "Mushlim Mohalla River Side Ward No.30, Daltenganj",
+        address: "Muslim Mohalla River Side Ward No.30, Daltenganj",
         contacts: "8709083006 / 7488090923",
       },
       {
         location: "Deoghar",
         name: "Ganesh Gupta",
-        address: "KKN Stadium Castier Town B Deoghar, Jharkhand-818112",
+        address: "KKN Stadium Castier Town B, Deoghar, Jharkhand-818112",
         contacts: "9122594401 / 9431306176",
       },
       {
@@ -929,9 +940,9 @@ const Network = () => {
       },
       {
         location: "Dumka",
-        name: "Ram Babu Tiwari",
+        name: "Manish Agrahari",
         address: "Gilanpara, Near Church, Dumka, Jharkhand",
-        contacts: "9162755768",
+        contacts: "6204331767",
       },
       {
         location: "Garhwa",
@@ -941,10 +952,9 @@ const Network = () => {
       },
       {
         location: "Giridih",
-        name: "Kaushal",
-        address:
-          "I.C.R Road Old Shivalaya Mandir Giridih PinCode-815301 Jharkhand",
-        contacts: "9472772711 / 7903610711",
+        name: "Gaurabh Sinha",
+        address: "Station Road, Near Academy School Giridih - 815301",
+        contacts: "7488824180",
       },
       {
         location: "Gumla",
@@ -962,26 +972,26 @@ const Network = () => {
       {
         location: "Hazaribagh",
         name: "Shyam Bihari Singh",
-        address: "Malviya Marg Near Shksham Hotel Hazaribagh",
+        address: "Malviya Marg Near Shaksham Hotel, Hazaribagh",
         contacts: "7258966345",
       },
       {
-        location: "Jamshedpur",
+        location: "Jamshedpur / Tata",
         name: "Danish",
-        address: "Kashiduh Near Durga Mandir, Jamshedpur",
+        address: "Kashiduh Near Durga Mandir",
         contacts: "9386081033",
       },
       {
         location: "Jhariya",
         name: "Sanjeet Singh",
-        address: "Sindri Road Phularibag Near Kata Ghar Indra Chowk Jhariya",
+        address: "Sindri Road Phularibag Near Kata Ghar Indra Chowk, Jhariya",
         contacts: "9470373355",
       },
       {
-        location: "Jhumritaliya",
-        name: "D.N.Jha",
+        location: "Jhumritilaiya",
+        name: "D.N. Jha",
         address:
-          "Opposite Adityavision Ranchi Patna Road, Jhumritelaiya Kodrma",
+          "Opposite Adityavision Ranchi Patna Road, Jhumritilaiya, Koderma",
         contacts: "7004248635",
       },
       {
@@ -993,7 +1003,7 @@ const Network = () => {
       {
         location: "Phusro",
         name: "Ashutosh",
-        address: "Near Mahavir Mander Phusro Bermo, Bokaro, Jharkhand-829144",
+        address: "Near Mahavir Mandir Phusro Bermo, Bokaro, Jharkhand-829144",
         contacts: "8340500805",
       },
       {
@@ -1005,35 +1015,36 @@ const Network = () => {
       {
         location: "Ranchi",
         name: "Anil Tiwari",
-        address: "Gaddi Khana Chowk Near Lal Batti Sarkari School Ranchi",
+        address: "Gaddi Khana Chowk Near Lal Batti Sarkari School, Ranchi",
         contacts: "8804532046",
       },
       {
         location: "Simdega",
         name: "Niraj Sharma",
         address:
-          "Golden Roadways & Logistics Pvt. Ltd. Idgah Muhalla Infront Of Makka Maszid Simdega (Jharkhand)",
+          "Golden Roadways & Logistics Pvt. Ltd., Idgah Muhalla Infront Of Makka Masjid, Simdega",
         contacts: "6204036372",
       },
     ],
+
     WestBengalDelivery: [
       {
         location: "Asansol",
         name: "Zahid Malik",
         address:
-          "49 G.T Road, Mallick Mansion Near Gujrati School the Horizone Block-B, Asansol",
+          "49 G.T Road, Mallick Mansion Near Gujrati School, The Horizon Block-B, Asansol",
         contacts: "08768000055 / 9851990270",
       },
       {
         location: "Bankura",
         name: "Arghya Tiwari",
-        address: "By pass road, Lalbandh, Lalbazar, Bankura 722101",
+        address: "Bypass Road, Lalbandh, Lalbazar, Bankura-722101",
         contacts: "7602148274",
       },
       {
         location: "Burdwan",
         name: "Rabindra Shaw",
-        address: "Telipukur Mirchoba Ram Mudi Colony Purba Burdwan 713103",
+        address: "Telipukur Mirchoba Ram Mudi Colony, Purba Burdwan-713103",
         contacts: "9333766059 / 9800025900 / 7808135414 / 9851990270",
       },
       {
@@ -1043,16 +1054,23 @@ const Network = () => {
         contacts: "9581990270",
       },
       {
+        location: "Gangarampur",
+        name: "Rajesh Prasad",
+        address: "Gangarampur Bara Bazar, Dakshin Dinajpur",
+        contacts: "7063333529 / 7384164821",
+      },
+      {
         location: "Kaliachak",
-        name: "MD.Mohidul Hoque",
-        address: "Baliadanga More Ansaripara Near Kath Mill, Kaliachak",
-        contacts: "9734926680",
+        name: "Rahul Choudhary",
+        address: "Baliadanga More, Kaliachak",
+        contacts: "8617483504",
       },
       {
         location: "Kaliyaganj",
-        name: "Uttam Kumar Saha",
-        address: "South Akhanagar, Kaliyaganj",
-        contacts: "9434965019",
+        name: "Prabin Kumar",
+        address:
+          "Meen Bhawan Near Power House, Raiganj, Distt-North Dinajpur-733134",
+        contacts: "9832080051 / 8637063668",
       },
       {
         location: "Malda",
@@ -1064,13 +1082,13 @@ const Network = () => {
         location: "Raiganj",
         name: "Prabin Kumar",
         address:
-          "Meen Bhawan Near Power House Raiganj, Distt-North Dinajpur-733134",
+          "Meen Bhawan Near Power House, Raiganj, Distt-North Dinajpur-733134",
         contacts: "9832080051 / 8637063668",
       },
       {
         location: "Chanchal",
         name: "Sunil",
-        address: "Chanchal Sukonta Mode",
+        address: "Chanchal Sukanta Mode",
         contacts: "9563252865",
       },
       {
@@ -1088,7 +1106,7 @@ const Network = () => {
       {
         location: "Raghunath Ganj",
         name: "Viswajit Dass",
-        address: "Cassim Bazar Near Santhi Sangha Club, Raghunath Ganj",
+        address: "Cassim Bazar Near Santhi Sangha Club",
         contacts: "8906709842 / 8250871046",
       },
       {
@@ -1124,31 +1142,31 @@ const Network = () => {
       {
         location: "Coochbehar",
         name: "Sanjay Yadav",
-        address: "S.N. Road, Durgabari, Near Ekta Marble House, Coochbehar",
+        address: "S.N. Road, Durgabari, Near Ekta Marble House",
         contacts: "8373070474 / 8016972072",
       },
       {
         location: "Dinhata",
         name: "Sanjay Yadav",
-        address: "S.N. Road, Durgabari, Near Ekta Marble House, Dinhata",
+        address: "S.N. Road, Durgabari, Near Ekta Marble House",
         contacts: "8373070474 / 8016972072",
       },
       {
         location: "Mathabhanga",
         name: "Sanjay Yadav",
-        address: "S.N. Road, Durgabari, Near Ekta Marble House, Mathabhanga",
+        address: "S.N. Road, Durgabari, Near Ekta Marble House",
         contacts: "8373070474 / 8016972072",
       },
       {
         location: "Tufanganj",
         name: "Sanjay Yadav",
-        address: "S.N. Road, Durgabari, Near Ekta Marble House, Tufanganj",
+        address: "S.N. Road, Durgabari, Near Ekta Marble House",
         contacts: "8373070474 / 8016972072",
       },
       {
         location: "Dalkola",
         name: "Paritosh",
-        address: "Malikpur, Uttam Dinajpur, West Bengal, Pin -733201",
+        address: "Malikpur, Uttam Dinajpur, West Bengal, Pin-733201",
         contacts: "8250860792 / 9563650663",
       },
       {
@@ -1159,12 +1177,13 @@ const Network = () => {
         contacts: "8617035502 / 9851050152 / 9800368222",
       },
       {
-        location: "Silliguri",
+        location: "Siliguri",
         name: "Raghav Sharma",
-        address: "Suman Tea Warehouse, Sevoke Road, Silliguri",
+        address: "Suman Tea Warehouse, Sevoke Road, Siliguri",
         contacts: "9933388301",
       },
     ],
+
     AssamDelivery: [
       {
         location: "Bilasipara",
@@ -1174,67 +1193,171 @@ const Network = () => {
         contacts: "8822986940 / 9954000946",
       },
       {
-        location: "Bongaigoan",
+        location: "Bongaigaon",
         name: "Santosh Kumar",
-        address: "Pagla Sathan Krishna Mill Compound Bongaigaon",
+        address: "Pagla Sathan Krishna Mill Compound, Bongaigaon",
         contacts: "7002321826 / 9435021816",
       },
       {
         location: "Barpeta Road",
         name: "Sujit Saha",
-        address: "Simlaguri Barpeta Road",
+        address: "Simlaguri, Barpeta Road",
         contacts: "7002310595",
       },
       {
         location: "Nalbari",
         name: "Monu Shaikh",
-        address: "Nailbari Bhagatpara Road Ward No.2",
+        address: "Nalbari Bhagatpara Road, Ward No-2",
         contacts: "8638710690",
       },
       {
         location: "Dhubri",
-        name: "B.N.Jha",
-        address: "Lal Mill Compound Ward No. 3 Baluchar Dhubri-783301",
+        name: "B.N. Jha",
+        address: "Lal Mill Compound, Ward No-3, Baluchar, Dhubri-783301",
         contacts: "8638662023",
       },
       {
         location: "Goalpara",
         name: "Pandit",
-        address: "Near Boro Bazar Thakur Bari Goalpara",
+        address: "Near Boro Bazar Thakur Bari, Goalpara",
         contacts: "7002089858 / 6000948805",
       },
       {
         location: "Krishnai",
         name: "Azizul Ali",
-        address: "Krishnai Godown Burgabari",
+        address: "Krishnai Godown, Burgabari",
         contacts: "9101766983",
+      },
+      {
+        location: "Rangia",
+        name: "Ashif Ikbal",
+        address: "Rangia Tinali Ward No-5, Near Rail Gate, Pin-781354",
+        contacts: "8595873307",
       },
       {
         location: "Kokrajhar",
         name: "Satya Deo Mandal",
-        address: "Bazar Road Kokrajhar",
+        address: "Bazar Road, Kokrajhar",
         contacts: "9435643569",
       },
     ],
-    TripuraDelivery: [
+    BijnorDistrictDelivery: [
       {
-        location: "Agartala",
-        name: "Arun Kumar Ghosh",
-        address:
-          "Sree Krishna Roadways, Ramthakur Sanga Opp. Fire Station, M.G. Bazar, West Tripura, Agartala",
-        contacts: "9436167508 / 9366376012",
+        location: "Bijnor",
+        name: "Yashik Chawla",
+        address: "",
+        contacts: "9897856569",
+      },
+      {
+        location: "Nethaur",
+        name: "Naim",
+        address: "",
+        contacts: "8475993523",
+      },
+      {
+        location: "Noorpur",
+        name: "Arpit",
+        address: "",
+        contacts: "8864841706",
+      },
+      {
+        location: "Najibabad",
+        name: "Ritu Bhushan Agarwal",
+        address: "",
+        contacts: "9837053306",
+      },
+      {
+        location: "Seohara",
+        name: "Sahil",
+        address: "",
+        contacts: "6397159135 / 8791789790",
+      },
+      {
+        location: "Nagina",
+        name: "Sunny",
+        address: "",
+        contacts: "8534046789 / 8865046789",
+      },
+      {
+        location: "Dhampur",
+        name: "Lalit",
+        address: "",
+        contacts: "8218599853 / 8791257268",
+      },
+      {
+        location: "Chandpur",
+        name: "Zubar",
+        address: "",
+        contacts: "8630467129",
+      },
+      {
+        location: "Kirtarpur",
+        name: "Mohd. Tariq",
+        address: "",
+        contacts: "8445438141",
+      },
+    ],
+    WesternUPDelivery: [
+      {
+        location: "Chandausi",
+        name: "Gagan",
+        address: "",
+        contacts: "9149347003 / 9719320430",
+      },
+      {
+        location: "Bahjoi",
+        name: "Harish",
+        address: "",
+        contacts: "9675271300 / 8445093727",
+      },
+      {
+        location: "Moradabad",
+        name: "Pankit",
+        address: "",
+        contacts: "9758507001",
+      },
+      {
+        location: "Bareilly",
+        name: "Azeem",
+        address: "",
+        contacts: "7017197809 / 8218688205",
+      },
+      {
+        location: "Pilibhit",
+        name: "Irfan",
+        address: "",
+        contacts: "6397215029 / 8869059838",
+      },
+      {
+        location: "Baheri",
+        name: "Wazid",
+        address: "",
+        contacts: "9286873976 / 8279957082",
+      },
+      {
+        location: "Shahjahanpur",
+        name: "Aman",
+        address: "",
+        contacts: "9453290722 / 8707552809",
       },
     ],
   };
 
-  const bookingRegions = ["Delhi", "UttarPradesh", "Haryana", "Punjab", "Gujarat"];
+  const bookingRegions = [
+    "Delhi",
+    "UttarPradesh",
+    "Haryana",
+    "Punjab",
+    "Gujarat",
+  ];
   const deliveryRegions = [
     "UttarPradeshDelivery",
     "BiharDelivery",
     "JharkhandDelivery",
     "WestBengalDelivery",
     "AssamDelivery",
-    "TripuraDelivery",
+    "BijnorDistrictDelivery",
+    "WesternUPDelivery",
   ];
 
   const sectionVariants = {
@@ -1344,9 +1467,11 @@ const Network = () => {
                           ? "West Bengal"
                           : region === "AssamDelivery"
                             ? "Assam"
-                            : region === "TripuraDelivery"
-                              ? "Tripura"
-                              : region}
+                            : region === "BijnorDistrictDelivery"
+                              ? "Bijnor District (Uttar Pradesh)"
+                              : region === "WesternUPDelivery"
+                                ? "Western Uttar Pradesh"
+                                : region}
                 </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                   {offices[region].map((office, index) => (
