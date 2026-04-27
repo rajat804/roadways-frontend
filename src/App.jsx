@@ -12,7 +12,7 @@ import PickupRequest from './pages/Pickup';
 import Network from './pages/Network';
 import ScrollToTop from './components/ScrollToTop'; 
 import AdminPanel from "./admin/AdminPanel";
-import Layout from './components/layout';
+import Layout from './components/Layout';
 import AdminLayout from './admin/components/AdminLayout';
 import Dashboard from './admin/pages/Dashboard';
 import Login from './auth/Login';
