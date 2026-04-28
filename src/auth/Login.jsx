@@ -11,7 +11,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URI || 'http://localhost:4000';
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URI;
   const API_URL = `${BACKEND_URL}/api/auth`;
 
   const handleSubmit = async (e) => {
