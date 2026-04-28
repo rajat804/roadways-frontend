@@ -1,15 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
+   const navigate = useNavigate();
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URI;
   const menuItems = [
     { path: '/admin/dashboard', name: 'Dashboard', icon: '📊' },
-    { path: '/admin/booking', name: 'Booking Offices', icon: '🏢' },
-    { path: '/admin/delivery', name: 'Delivery Offices', icon: '🚚' },
-    { path: '/admin/add-booking', name: 'Add Booking Office', icon: '➕' },
-    { path: '/admin/add-delivery', name: 'Add Delivery Office', icon: '🚛' },
-    { path: '/admin/contacts', name: 'Contacts', icon: '📞' },
-    { path: '/admin/settings', name: 'Settings', icon: '⚙️' },
+    { path: '/admin/dashboard/add-booking', name: 'Add Booking Office', icon: '➕' },
+    { path: '/admin/dashboard/add-delivery', name: 'Add Delivery Office', icon: '➕' },
+
   ];
 
   // Close sidebar function
@@ -18,6 +18,23 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       setSidebarOpen(false);
     }
   };
+
+  // Logout function
+  const handleLogout = async () => {
+    try {
+      await axios.post(`${BACKEND_URL}/api/auth/logout`, {}, {
+        withCredentials: true
+      });
+    } catch (error) {
+      console.log("Logout API error:", error);
+    }
+
+    localStorage.removeItem("adminToken");
+    localStorage.removeItem("adminEmail");
+
+    navigate("/login");
+  };
+
 
   return (
     <>
@@ -92,6 +109,20 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             </NavLink>
           ))}
         </nav>
+
+
+         {/* Logout Button */}
+        <div className="px-3 mb-3">
+          <button
+            onClick={handleLogout}
+            className="w-full flex items-center gap-3 px-4 py-2.5 text-red-300 hover:bg-red-600 hover:text-white rounded-lg transition-colors"
+          >
+            <span className="text-xl">🚪</span>
+            {sidebarOpen && (
+              <span className="font-medium text-sm md:text-base">Logout</span>
+            )}
+          </button>
+        </div>
 
         {/* Footer */}
         <div className="p-4 md:p-5 border-t border-sky-700">
