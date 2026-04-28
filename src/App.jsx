@@ -16,6 +16,8 @@ import Layout from './components/Layout';
 import AdminLayout from './admin/components/AdminLayout';
 import Dashboard from './admin/pages/Dashboard';
 import Login from './auth/Login';
+import BookingOffices from './admin/pages/BookingOffices';
+import DeliveryOffices from './admin/pages/DeliveryOffices';
 const App = () => {
   return (
     <div>
@@ -41,6 +43,8 @@ const App = () => {
       <Routes>
         <Route path='/admin/dashboard' element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path='add-booking' element={<BookingOffices />} />
+          <Route path='add-delivery' element={<DeliveryOffices />} />
 
         </Route>
       </Routes>
